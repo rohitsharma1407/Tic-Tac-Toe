@@ -5,7 +5,7 @@ let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 let turnO = true;//playerX, playerO
-
+// win pattern
 const winPatterns = [
     [0, 1, 2],
     [0, 3, 6],
@@ -73,4 +73,5 @@ const checkWinner = () => {
 };
 
 newGameBtn.addEventListener("click", resetGame);
+
 resetBtn.addEventListener("click", resetGame);
